@@ -32,9 +32,13 @@ if [ "$PS1" ]; then
 fi
 stty stop undef
 
-export PYTHONPATH=/usr/lib/python2.6/site-packages/
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.6
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+#export PYTHONPATH=/usr/lib/python2.6/site-packages/
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.6
+#export WORKON_HOME=$HOME/.virtualenvs
+#source /usr/bin/virtualenvwrapper.sh
+
+# github
+export GIT_SSL_NO_VERIFY=true
+unset SSH_ASKPASS
 
 
